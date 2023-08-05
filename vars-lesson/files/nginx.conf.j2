@@ -1,0 +1,11 @@
+events {
+
+}
+
+http {
+  root   {{ root_dir }};
+  index index.html;
+  server {
+    listen {{ nginx_port }} default_server;
+  }
+}
